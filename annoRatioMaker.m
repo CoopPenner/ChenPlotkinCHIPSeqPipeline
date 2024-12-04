@@ -5,7 +5,7 @@ warning('off','all')
 try
 
 for dd=1:length(annotation   )
-    annotationAtPlay=convertStringsToChars(annotation(dd)); %convert to char 
+    annotationAtPlay=convertStringsToChars(annotation(dd)); %convert to char
     detAtPlay=convertStringsToChars(detAnnotation(dd));
     if ~strcmp(annotationAtPlay, 'Intergenic')
         annotation(dd)= convertCharsToStrings(annotationAtPlay(1: (find(isspace(annotationAtPlay),1)-1)   )) ; %remove space
@@ -24,7 +24,7 @@ for dd=1:length(annotation   )
         end
     end
 end
-
+a=4;
 
 catch
 b=1;
